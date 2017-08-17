@@ -5,12 +5,12 @@
 We do not want certain pages to be tracked. We are not interested in their usage and tracking them only clutters the Experience Database with unneeded data.
 For instance :
 
-- api-calls to anyithing under /api/*
+- api-calls to anything under /api/*
 
-### Why ###
+## Why ##
 
 This feature was introduced in Sitecore 8.2, but it does not work with wildcards.
-It would be impossible to maintin a list of api-controllers, so we opted to make something urselves.
+It would be impossible to maintain a list of api-controllers, so we opted to make something urselves.
 
 ## Compatibility ##
 
