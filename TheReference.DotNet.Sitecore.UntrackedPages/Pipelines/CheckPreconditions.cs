@@ -1,12 +1,10 @@
 ﻿using Sitecore;
 using Sitecore.Analytics;
-using Sitecore.Analytics.Configuration;
 using Sitecore.Analytics.Tracking.Diagnostics.PerformanceCounters;
 using Sitecore.Diagnostics;
 using Sitecore.Layouts;
 using Sitecore.Pipelines;
 using Sitecore.Sites;
-using System;
 using TheReference.DotNet.Sitecore.UntrackedPages.Configuration;
 
 namespace TheReference.DotNet.Sitecore.UntrackedPages.Pipelines
