@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UntrackedPages", "UntrackedPages\UntrackedPages.csproj", "{E2BFC8FF-1042-4F43-BEE8-AA76F6798A97}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheReference.DotNet.Sitecore.UntrackedPages", "TheReference.DotNet.Sitecore.UntrackedPages\TheReference.DotNet.Sitecore.UntrackedPages.csproj", "{DEB67DB5-9A7D-4FF5-B081-B7C25964C8A4}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E2BFC8FF-1042-4F43-BEE8-AA76F6798A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2BFC8FF-1042-4F43-BEE8-AA76F6798A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2BFC8FF-1042-4F43-BEE8-AA76F6798A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2BFC8FF-1042-4F43-BEE8-AA76F6798A97}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DEB67DB5-9A7D-4FF5-B081-B7C25964C8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DEB67DB5-9A7D-4FF5-B081-B7C25964C8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEB67DB5-9A7D-4FF5-B081-B7C25964C8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
