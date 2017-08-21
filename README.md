@@ -2,6 +2,7 @@
 
 ## What ##
 
+Expanding on Sitecore OOTB.
 We do not want certain pages to be tracked. We are not interested in their usage and tracking them only clutters the Experience Database with unneeded data.
 For instance :
 
@@ -9,8 +10,8 @@ For instance :
 
 ## Why ##
 
-This feature was introduced in Sitecore 8.2, but it does not work with wildcards.
-It would be impossible to maintain a list of api-controllers, so we opted to make something urselves.
+This feature was introduced in Sitecore 8.2, but we want it available in 8.1 AND it does not work with wildcards.
+It would be impossible to maintain a list of api-controllers, and Sitecore-Support suggested we make a modified version ourselves.
 
 ## Compatibility ##
 
