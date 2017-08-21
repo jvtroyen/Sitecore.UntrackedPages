@@ -71,6 +71,8 @@ namespace TheReference.DotNet.Sitecore.UntrackedPages.Pipelines
                 Log.Warn("UntrackedPage - " + filePath, this);
                 return true;
             }
+
+            Log.Info("TrackedPage - " + filePath, this);
             return false;
         }
     }
