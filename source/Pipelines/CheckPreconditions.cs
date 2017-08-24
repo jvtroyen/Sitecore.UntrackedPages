@@ -55,7 +55,7 @@ namespace TheReference.DotNet.Sitecore.UntrackedPages.Pipelines
                         args.AbortPipeline();
                     else if (!TrackingSiteContextExtension.Tracking(site).EnableTracking)
                         args.AbortPipeline();
-                    else if (this.IsUntrackedPage(page.FilePath))
+                    else if (this.IsUntrackedPage(page.FilePath, Context.RawUrl))
                         args.AbortPipeline();
                     else
                         AnalyticsTrackingCount.CollectionTotalRequests.Increment(1L);
@@ -63,16 +63,24 @@ namespace TheReference.DotNet.Sitecore.UntrackedPages.Pipelines
             }
         }
 
-        protected bool IsUntrackedPage(string filePath)
+        protected bool IsUntrackedPage(string filePath, string rawUrl)
         {
             Assert.ArgumentNotNull((object)filePath, "filePath");
-            if (ExcludeList.ContainsUntrackedPage(filePath))
+            Assert.ArgumentNotNull((object)rawUrl, "rawUrl");
+
+            var value = filePath;
+            if (string.IsNullOrEmpty(value))
             {
-                Log.Warn("UntrackedPage - " + filePath, this);
+                value = rawUrl;
+            }
+
+            if (ExcludeList.ContainsUntrackedPage(value))
+            {
+                Log.Warn("UntrackedPage - " + value, this);
                 return true;
             }
 
-            Log.Info("TrackedPage - " + filePath, this);
+            Log.Info("TrackedPage - " + value, this);
             return false;
         }
     }

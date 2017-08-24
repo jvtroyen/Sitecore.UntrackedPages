@@ -27,6 +27,10 @@ namespace TheReference.DotNet.Sitecore.UntrackedPages.Configuration
         public bool ContainsUntrackedPage(string page)
         {
             Assert.ArgumentNotNull(page, "page");
+            if (string.IsNullOrEmpty(page))
+            {
+                return false;
+            }
             return untrackedPages.Any(untrackedPage => new WildcardPattern(untrackedPage).IsMatch(page));
         }
 
